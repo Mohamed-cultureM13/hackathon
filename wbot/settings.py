@@ -19,7 +19,7 @@ DEBUG = True
 #For production enable debug to False
 # DEBUG = config("DEBUG", default=False, cast=bool)
 
-ALLOWED_HOSTS = ['*'] #For production: 'nikofiti.tanzaniabankers.org'
+ALLOWED_HOSTS = ['*'] 
 
 
 # Application definition
