@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - TBA Nikofiti - Elimu ya Fedha</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to TBA Nikofiti</h1>
+            <p>Your trusted source for financial education.</p>
+        </header>
+
+        <section class="intro">
+            <h2>Nikofiti WhatsApp Chatbot</h2>
+            <p>
+                Need quick financial education? Reach out to our 24/7 WhatsApp chatbot!
+                Save the number <strong class="whatsapp-number">0760 324 247</strong> and begin your conversation at your convenience. Alternatively, click the <strong>'Chat with Us'</strong> button below.👇
+            </p>
+
+            <button class="chat-button" onclick="openWhatsApp()">Chat with Us</button>
+        </section>
+
+        <footer>
+            <p><a href="{% url 'privacy_policy' %}">Privacy Policy</a></p>
+        </footer>
+    </div>
+
+    <script>
+        function openWhatsApp() {
+            window.open("https://wa.me/255760324247", "_blank");
+        }
+    </script>
+</body>
+</html>
